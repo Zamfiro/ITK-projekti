@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|c:\\users\\mimin\\desktop\\izbrani projekti\\feri\\2 letnik\\4. semester\\so\\naloga 3 - programiranje k-t metode\\nikoli\u0107_kt_metoda\\ocene.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|solutionrelative:ocene.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|c:\\users\\mimin\\desktop\\izbrani projekti\\feri\\2 letnik\\4. semester\\so\\naloga 3 - programiranje k-t metode\\nikoli\u0107_kt_metoda\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|c:\\users\\mimin\\desktop\\izbrani projekti\\feri\\2 letnik\\4. semester\\so\\naloga 3 - programiranje k-t metode\\nikoli\u0107_kt_metoda\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|c:\\users\\mimin\\desktop\\izbrani projekti\\feri\\2 letnik\\4. semester\\so\\naloga 3 - programiranje k-t metode\\nikoli\u0107_kt_metoda\\ocene.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|solutionrelative:ocene.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|c:\\users\\mimin\\desktop\\izbrani projekti\\feri\\2 letnik\\4. semester\\so\\naloga 3 - programiranje k-t metode\\nikoli\u0107_kt_metoda\\podrobengraf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|solutionrelative:podrobengraf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|c:\\users\\mimin\\desktop\\izbrani projekti\\feri\\2 letnik\\4. semester\\so\\naloga 3 - programiranje k-t metode\\nikoli\u0107_kt_metoda\\podrobengraf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3CD4CB4D-5B47-4DE9-A045-90FD6D3647D6}|Nikoli\u0107_KT_Metoda.csproj|solutionrelative:podrobengraf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWIndow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\MainWIndow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWIndow.xaml.cs",
+              "ToolTip": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\MainWIndow.xaml.cs",
+              "RelativeToolTip": "MainWIndow.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T20:00:47.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PodrobenGraf.xaml",
+              "DocumentMoniker": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\PodrobenGraf.xaml",
+              "RelativeDocumentMoniker": "PodrobenGraf.xaml",
+              "ToolTip": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\PodrobenGraf.xaml",
+              "RelativeToolTip": "PodrobenGraf.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-10T20:00:47.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PodrobenGraf.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\PodrobenGraf.xaml.cs",
+              "RelativeDocumentMoniker": "PodrobenGraf.xaml.cs",
+              "ToolTip": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\PodrobenGraf.xaml.cs",
+              "RelativeToolTip": "PodrobenGraf.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T20:00:47.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ocene.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\Ocene.xaml.cs",
+              "RelativeDocumentMoniker": "Ocene.xaml.cs",
+              "ToolTip": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\Ocene.xaml.cs",
+              "RelativeToolTip": "Ocene.xaml.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAmwBEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T20:00:47.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ocene.xaml",
+              "DocumentMoniker": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\Ocene.xaml",
+              "RelativeDocumentMoniker": "Ocene.xaml",
+              "ToolTip": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\Ocene.xaml",
+              "RelativeToolTip": "Ocene.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-10T20:00:47.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWIndow.xaml",
+              "DocumentMoniker": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\MainWIndow.xaml",
+              "RelativeDocumentMoniker": "MainWIndow.xaml",
+              "ToolTip": "C:\\Users\\mimin\\Desktop\\izbrani projekti\\FERI\\2 LETNIK\\4. semester\\SO\\Naloga 3 - Programiranje K-T metode\\Nikoli\u0107_KT_Metoda\\MainWIndow.xaml",
+              "RelativeToolTip": "MainWIndow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-10T20:00:47.191Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

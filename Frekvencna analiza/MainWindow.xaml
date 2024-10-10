@@ -1,0 +1,102 @@
+﻿<Window x:Class="Frekvenčna_analiza.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Frekvenčna_analiza"
+        xmlns:sp="clr-namespace:ScottPlot;assembly=ScottPlot"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1000" Width="1500">
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0">
+
+            <Menu>
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Uvozi" >
+                        <MenuItem Header="_Šifrirano Besedilo" Click="SifriranoBesedilo_Click" />
+                        <MenuItem Header="_Referenčno Besedilo" Click="ReferencnoBesedilo_Click" />
+                    </MenuItem>
+                    <MenuItem Header="_Izvozi" Click="Izvozi_Click"/>
+                    <Separator />
+                    <MenuItem Header="_Exit" Click="Exit_Click" />
+                </MenuItem>
+            </Menu>
+
+            <Label FontWeight="Bold">Frekvenčna analiza</Label>
+            <Label FontWeight="Bold">Sprememba črk:</Label>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBox MaxLength="1" CharacterCasing="Upper" x:Name="crka1" Width="25" Margin="10,10,15,10"></TextBox>
+                <Label VerticalAlignment="Center">-></Label>
+                <TextBox MaxLength="1" CharacterCasing="Upper" x:Name="crka2" Width="25" Margin="10,10,15,10"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="zamenjava" Width="100" Margin="5" Click="zamenjava_Click">Zamenjava</Button>
+                <Button x:Name="ponastavi" Width="100" Margin="5" Click="Ponastavi_Click">Ponastavi</Button>
+                <Button x:Name="desifriraj" Width="100" Margin="5" Click="Desifriraj_Click">Dešifriraj</Button>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="1">
+
+            <Label>Referenčno besedilo</Label>
+            <Border BorderThickness="1px" BorderBrush="Black" >
+                <TextBox MaxHeight="300" Height="300" Width="Auto" x:Name="referencno_besedilo" TextWrapping="Wrap" IsReadOnly="True" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+            </Border>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="2">
+
+            <!--izris frekvencnega grafa referencnega besedila-->
+            <WpfPlot Name="referencniGraf" Height="450">
+
+            </WpfPlot>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <Label>Šifrirano besedilo</Label>
+            <Border BorderThickness="1px" BorderBrush="Black">
+                <TextBox MaxHeight="300" Height="300" Width="Auto" x:Name="sifrirano_besedilo" TextWrapping="Wrap" IsReadOnly="True" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+            </Border>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="2" x:Name="segmentSifriranega">
+            <!--izris frekvencnega grafa šifriranega besedila-->
+            <WpfPlot Name="sifriranGraf" Height="450">
+
+            </WpfPlot>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="1">
+            <Label>Dešifrirano besedilo</Label>
+            <Border BorderThickness="1px" BorderBrush="Black">
+                <TextBox MaxHeight="300" Height="300" Width="Auto" x:Name="desifrirano_besedilo" TextWrapping="Wrap" IsReadOnly="True" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+            </Border>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="2" x:Name="segmentDesifriranega">
+            <!--izris frekvencnega grafa desifriranega besedila-->
+            <WpfPlot Name="desifriranGraf" Height="450">
+
+            </WpfPlot>
+        </StackPanel>
+
+    </Grid>
+</Window>

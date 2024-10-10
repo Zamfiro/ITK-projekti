@@ -1,0 +1,124 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		Width="800" Height="450"
+        x:Class="blitzWeather.MainWindow"
+        Title="blitzWeather" CanResize="False">
+
+
+	<!--Avalonia docs https://docs.avaloniaui.net/	-->
+	<!--Weeather API -> https://www.weatherapi.com/docs/ -->
+	<!-- API KEY: 5fc66be6f0864b40976114321223012 -->
+
+	<!-- Colors:
+	bg -> #0D1B2A
+	left panel -> #1B263B
+	accent primary -> #415A77
+	accent secondary -> #778DA9
+	text -> #E0E1DD -->
+
+	<Grid Background="#0D1B2A">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="200" />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+
+
+		<StackPanel Grid.Column="0" Background="#1B263B">
+			<Label Margin="10" HorizontalContentAlignment="Stretch" FontSize="20" Content="blitzweather." FontFamily="Arial" FontWeight="DemiBold"  Foreground="#E0E1DD"></Label>
+			<!--<TextBox Margin="5" SelectionBrush="#778DA9" AcceptsReturn="True" x:Name="pretraga" Background="#415A77" Watermark="Pretraga..."></TextBox>-->
+
+
+
+			<ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" IsTextSearchEnabled="True" Margin="0" x:Name="seznamMest" Background="#1B263B"  Items="{Binding}" SelectedIndex="{Binding ElementName=pretraga, Path=Text, Mode=OneWay}">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<StackPanel Orientation="Horizontal" Spacing="10">
+							<Image x:Name="ikonaBlok" Width="25" Source="{Binding Ikonica}"/>
+							<TextBlock Foreground="#E0E1DD" x:Name ="imeBlok" VerticalAlignment="Center" Width ="80" Text = "{Binding Ime}"/>
+							<TextBlock Foreground="#E0E1DD" x:Name ="temperaturaBlok" VerticalAlignment="Center" Width ="80" Text = "{Binding Temperatura}"/>
+						</StackPanel>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+		</StackPanel>
+
+
+		<DockPanel Grid.Column="1" x:Name="MainPanel">
+
+			<StackPanel x:Name="TopPanel" DockPanel.Dock="Top" Orientation="Horizontal"  HorizontalAlignment="Stretch" VerticalAlignment="Top" >
+
+				<Border
+					Background="#415A77"
+					BorderThickness="2"
+					CornerRadius="10"
+					Padding="4"
+					Margin="10">
+
+					<StackPanel  Margin="10" Width="300" HorizontalAlignment="Stretch" Orientation="Vertical">
+						<Label Name="Mesto" FontSize="50" FontFamily="Arial" FontWeight="Light" HorizontalAlignment="Left" Foreground="#E0E1DD" Content="{Binding ElementName=seznamMest, Path=SelectedItem.Ime, Mode=TwoWay}"></Label>
+						<Label Name="Kraj" FontSize="25" FontFamily="Arial" FontWeight="Light" Foreground="#E0E1DD" HorizontalAlignment="Left" Content="{Binding ElementName=seznamMest, Path=SelectedItem.Drzava, Mode=TwoWay}"></Label>
+						<Label Name="Stanje" FontSize="25" FontFamily="Arial" FontWeight="Light" Foreground="#E0E1DD" HorizontalAlignment="Left" Content="{Binding ElementName=seznamMest, Path=SelectedItem.Stanje, Mode=TwoWay}"></Label>
+					</StackPanel>
+
+				</Border>
+
+				<Border
+					Background="#415A77"
+					BorderThickness="2"
+					CornerRadius="10"
+					Padding="4"
+					Margin="10">
+
+					<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Width="200" Orientation="Vertical">
+						<StackPanel Orientation="Horizontal" Spacing="10">
+							<Image Name="Ikonica" Width="50" Height="50" Source="{Binding ElementName=seznamMest, Path=SelectedItem.Ikonica, Mode=TwoWay}"></Image>
+							<Label  Name="Temperatura" FontSize="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Arial" FontWeight="Light" Foreground="#E0E1DD" HorizontalAlignment="Left" Content="{Binding ElementName=seznamMest, Path=SelectedItem.Temperatura, Mode=TwoWay}"></Label>
+						</StackPanel>
+						<Label Name="Vlaga" FontSize="25" VerticalContentAlignment="Center" FontFamily="Arial" FontWeight="Light" Foreground="#E0E1DD" HorizontalAlignment="Left" Content="{Binding ElementName=seznamMest, Path=SelectedItem.VlagaZraka, Mode=TwoWay}"></Label>
+					</StackPanel>
+				</Border>
+			</StackPanel>
+
+
+
+			<StackPanel x:Name="MidPanel" DockPanel.Dock="Bottom" Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" >
+
+				<Border
+						Background="#415A77"
+						BorderThickness="2"
+						CornerRadius="10"
+						Padding="4"
+						Margin="10">
+
+
+					<StackPanel  Margin="10" Width="550" Height="100" HorizontalAlignment="Center" Orientation="Horizontal">
+						<ListBox x:Name="seznamProg"  HorizontalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Height="100" Background="#415A77" Items="{Binding ElementName=seznamMest, Path=SelectedItem.SeznamPrognoz}">
+							<ListBox.ItemsPanel>
+								<ItemsPanelTemplate>
+									<StackPanel Orientation='Horizontal' Spacing='50'/>
+								</ItemsPanelTemplate>
+							</ListBox.ItemsPanel>
+							<ListBox.ItemTemplate>
+								<DataTemplate>
+									<StackPanel Orientation="Vertical">
+										<TextBlock Text="{Binding DanVTednu}" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Light" Foreground="#E0E1DD" HorizontalAlignment="Center" />
+										<Image Source="{Binding DnevnaSlika}" Width="50"/>
+										<StackPanel Orientation="Horizontal" >
+											<TextBlock Text="{Binding DnevnaTemperaturaMin}"  VerticalAlignment="Center" FontFamily="Arial" FontWeight="Light" Foreground="#E0E1DD" HorizontalAlignment="Center" FontSize="18" />
+											<TextBlock Text=" - " FontSize="18"  VerticalAlignment="Center" FontFamily="Arial" FontWeight="Light" Foreground="#E0E1DD" HorizontalAlignment="Center"/>
+											<TextBlock Text="{Binding DnevnaTemperaturaMax}"  VerticalAlignment="Center" FontFamily="Arial" FontWeight="Light" Foreground="#E0E1DD" HorizontalAlignment="Center" FontSize="18" />
+										</StackPanel>
+									</StackPanel>
+								</DataTemplate>
+							</ListBox.ItemTemplate>
+						</ListBox>
+
+					</StackPanel>
+				</Border>
+			</StackPanel>
+		</DockPanel>
+	</Grid>
+</Window>

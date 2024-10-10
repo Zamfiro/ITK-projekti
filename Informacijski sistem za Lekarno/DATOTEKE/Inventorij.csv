@@ -1,0 +1,24 @@
+ID;Ime;Cena;Kolicina v zdravilu;Enota;Skladisce;Rok trajanja;Tip zdravila
+1;Tantum Verde;7,76;30;ml;polica;ni roka;/
+2;medex stres kontrol;8,48;100;mg;polica;ni roka;/
+3;Biostatine;20,48;800;mg;polica;ni roka;/
+4;Lioton Gel;17,96;100;g;polica;06/11/2022;Mazilo
+5;Mivolis Venen Gel;2,19;100;ml;polica;06/11/2022;Mazilo
+6;Ibubel;16,45;100;g;polica;06/11/2022;Mazilo
+7;S-quito free;5,49;100;ml;polica;06/11/2022;Mazilo
+8;Tobrex;3,85;3;mg/ml;polica;10/06/2022;Raztopina
+9;Propolis;3,99;15;ml;polica;10/06/2022;Raztopina
+10;Nasic;7,47;10;ml;polica;10/06/2022;Raztopina
+11;Marisol;7,25;10;ml;polica;10/06/2022;Raztopina
+12;Tritace;4,02;5;mg;polica;10/06/2022;Tableta
+13;Aspirin Protect;5,16;100;mg;polica;10/06/2022;Tableta
+14;Lekadol;3,45;500;mg;polica;10/06/2022;Tableta
+15;Calpol;2,7;500;mg;polica;10/06/2022;Tableta
+16;Pulmicort;3,85;200;mcg;polica;10/05/2023;Inhalator
+17;Berodual;4,55;100;mcg;polica;10/05/2023;Inhalator
+18;Ventolin;3,63;100;mikrogram;polica;10/05/2023;Inhalator
+19;Salbutamol;3,65;10;ml;polica;10/05/2023;Inhalator
+20;Plivit B1;/;1;ml;hladilnik;07/06/2022;Ampule
+21;Synopen;/;2;ml;hladilnik;18/05/2022;Ampule
+22;Torecam;/;1;ml;hladilnik;07/06/2022;Ampule
+23;Dexamethason;/;1;ml;hladilnik;07/06/2022;Ampule

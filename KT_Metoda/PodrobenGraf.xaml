@@ -1,0 +1,14 @@
+﻿<Window x:Class="Nikolić_KT_Metoda.PodrobenGraf"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nikolić_KT_Metoda"
+        mc:Ignorable="d"
+        Title="PodrobenGraf" Height="450" Width="450">
+    <Grid>
+        <StackPanel x:Name="Graph3" Grid.Column="1">
+            <WpfPlot Name="LineChart"></WpfPlot>
+        </StackPanel>
+    </Grid>
+</Window>
